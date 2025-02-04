@@ -1,0 +1,117 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xcdc5E6a16Aae64a7AF7B48cd67D75A34d7D2A344",
+      "txHash": "0xef78ea95f1f53de42e67f9f9b4d20994e48c3412a66b8886cf23e4aad9556e38",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "8ceece9cc45073062839148222088e7c84120eb671b8a7ce905bfdc2f5a51cd7": {
+      "address": "0x3743Ff5eC2D34D39433454ee346c8660107F7428",
+      "txHash": "0xe54b98756ad7c7cca9a6e30d0bcf3eb652873dd384188bf1ea48a2f56f23689a",
+      "layout": {
+        "solcVersion": "0.8.28",
+        "storage": [
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "TwoPlayerGame",
+            "src": "contracts/TwoPlayerGame.sol:8"
+          },
+          {
+            "label": "player1",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "TwoPlayerGame",
+            "src": "contracts/TwoPlayerGame.sol:9"
+          },
+          {
+            "label": "player2",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "TwoPlayerGame",
+            "src": "contracts/TwoPlayerGame.sol:10"
+          },
+          {
+            "label": "betAmount",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "TwoPlayerGame",
+            "src": "contracts/TwoPlayerGame.sol:11"
+          },
+          {
+            "label": "gameInProgress",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_bool",
+            "contract": "TwoPlayerGame",
+            "src": "contracts/TwoPlayerGame.sol:12"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)7_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
